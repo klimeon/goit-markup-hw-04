@@ -23,6 +23,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
     text-align: center;
+    max-width: 1600px;
 }
 .container {
     width: 1200px;
@@ -179,10 +180,16 @@ header .link {
 .hero {
     background-color: var(--bcg-pri-color);
     letter-spacing: 0.06em;
-    
+
     padding-top: 200px;
     padding-bottom: 200px;
-    
+}
+.hero.background {
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+     url(../images/bacground.jpg);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
 }
 .hero-title {
     color: var(--main-wight-color);
@@ -223,6 +230,13 @@ header .link {
 }
 .preference-item:not(:last-child) {
     margin-right: 30px;
+}
+.preference-item::before {
+    display: inline-block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    outline: 1px solid blueviolet;
 }
 
 
