@@ -174,6 +174,23 @@ header .link {
 .hover .link.current {
     color: var(--accent-color);
 }
+.mail::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-image: url(../images/ico/mail.svg);
+}
+.tel::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url(../images/ico/smartphone.svg);
+}
+
 
 
 /* hero */
@@ -236,9 +253,24 @@ header .link {
     content: "";
     width: 270px;
     height: 120px;
-    outline: 1px solid blueviolet;
+    background-color: #F5F4FA;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
 }
-
+.antenna::before {
+    background-image: url(../images/ico/antenna\ 1.svg);
+}
+.clock::before {
+    background-image: url(../images/ico/clock\ 1.svg);
+}
+.diagram::before {
+    background-image: url(../images/ico/diagram\ 1.svg);
+}
+.astronaut::before {
+    background-image: url(../images/ico/astronaut\ 1.svg);   
+}
 
 /* activity */
 .activity {
