@@ -8,7 +8,7 @@
     --button-color: #000000;
     --main-wight-color: #ffffff;
     --spec-link-color: rgba(255, 255, 255, 0.6);
-
+    --main-icon-color: #AFB1B8;
     --main-padding : 94px;
 }
 
@@ -31,14 +31,13 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.preference, .activity, .ourteam, .portfolio {
+.preference, .activity, .ourteam, .clients, .portfolio {
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
 }
-.flex {
+/* .flex {
     display: inline-flex;
-    align-items: center;
-}
+} */
 
 /* скинути крайні відступи */
 /* body .end {
@@ -148,6 +147,13 @@ header .link {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+.container.flex {
+    display: flex;
+}
+.nav {
+    display: flex;
+    align-items: center ;
+}
 .nav-link {
     display: flex;
     margin-left: 93px;
@@ -180,6 +186,8 @@ header .link {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    background-position: auto;
+    /* !!!!!! */
     background-image: url(../images/ico/mail.svg);
 }
 .tel::before {
@@ -191,7 +199,8 @@ header .link {
     background-image: url(../images/ico/smartphone.svg);
 }
 .tel:hover::before {
-    fill: var(--accent-color);
+    color: royalblue;
+    /* !!!!!! */
 }
 
 
@@ -330,6 +339,26 @@ header .link {
 .teem-text{
     font-size: 16px;
     line-height: 1.19;
+}
+
+
+/* client */
+.clients-coloms {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50pt;
+}
+.clients-item {
+    width: 170px;
+    height: 92px;
+    /* padding: 16px, 32px; */
+    border: 1px solid var(--main-icon-color);
+    border-radius: 4px;
+    
+}
+.company-1 {
+    display: inline-block;
+    padding: 16px, 32px;
 }
 
 
