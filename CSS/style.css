@@ -313,7 +313,7 @@ header .link {
     margin-top: 50pt;
 }
 .team-item {
-    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 /* .team-image {
     display: block;
@@ -337,6 +337,18 @@ header .link {
 .teem-text{
     font-size: 16px;
     line-height: 1.19;
+}
+
+.ourteam-css::after {
+    display: inline-block;
+    content: "";
+    width: 206px;
+    height: 44px;
+    /* margin: 16px 32px 30px 32px; */
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-image: url(../images/ico/instagram.svg), url(../images/ico/twitter.svg), url(../images/ico/facebook.svg), url(../images/ico/linkedin.svg);
+    background-position: 12px, 66px, 120px, 176px;
 }
 
 
