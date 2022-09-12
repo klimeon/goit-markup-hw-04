@@ -351,29 +351,11 @@ header .link {
 .clients-item {
     width: 170px;
     height: 92px;
-    /* padding: 16px, 32px; */
+    padding: 16px 32px;
     border: 1px solid var(--main-icon-color);
     border-radius: 4px;
-    
 }
-/* .clients-link {
-    display: block;
-    width: 106px;
-    height: 60px;
-    padding: 16px, 32px;
-} */ 
-/* .clients a {
-    display: inline-block;
-    padding: 16px, 32px;
-} */
-.company-1 {
-    object-position: 50% 50%;
-    /* display: block;
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-    padding: 16px, 32px; */
-}
+
 
 
 /* footer */
@@ -451,13 +433,8 @@ address .link {
     line-height: 1.87;
 }
 
-/* fix by mentor*/
-.our-works-css {
-    padding: 20px 24px;
-    
-    /* !!!зазор між фоткою і текстом? */
-}
 
-/* 1 перевірити марджини п і аш після виправлення
-    2 перевірити марджини у лі
-    3 переглянити 1 сторінку */
+
+1. переробити партфоліо свг
+2. телефон і мейл
+3. все в свг
