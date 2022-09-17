@@ -1,3 +1,40 @@
-.pref-item:not(:last-child) .preference-text {
-    padding: 30px;
+.hidenmark{
+    list-style: none;
+
+    padding: 0px;
+    margin: 0px;
 }
+
+.button {
+    padding: 0px;
+    border: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: 1px solid blue;
+}
+
+
+/* .button-icon {
+    fill: rgb(223, 12, 12);
+    width: 44px;
+    height: 44px;
+} */
+/* section {
+    display: block;
+    width: 206px;
+    height: 44px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 16px;
+} */

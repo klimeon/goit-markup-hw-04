@@ -173,6 +173,9 @@ header .link {
     margin-left: 50px;
     /* можна замінити на li */
 }
+.contact-item {
+    display: flex;
+}
 /* ефект наведення */
 .hover .link:hover,  .hover .link:focus {
     color: var(--accent-color);
@@ -180,23 +183,22 @@ header .link {
 .hover .link.current {
     color: var(--accent-color);
 }
-.mail::before {
+/* .mail::before {
     content: "";
     display: inline-block;
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    /* !!!!!! */
     background-image: url(../images/ico/mail.svg);
-}
-.tel::before {
+} */
+/* .tel::before {
     content: "";
     display: inline-block;
     width: 10px;
     height: 16px;
     margin-right: 10px;
     background-image: url(../images/ico/smartphone.svg);
-}
+} */
 .tel:hover::before {
     color: royalblue;
     /* !!!!!! */
@@ -258,7 +260,7 @@ header .link {
 .preference-item:not(:last-child) {
     margin-right: 30px;
 }
-.preference-item::before {
+/* .preference-item::before {
     display: inline-block;
     content: "";
     width: 270px;
@@ -280,7 +282,7 @@ header .link {
 }
 .astronaut::before {
     background-image: url(../images/ico/astronaut\ 1.svg);   
-}
+} */
 
 /* activity */
 .activity {
@@ -338,8 +340,30 @@ header .link {
     font-size: 16px;
     line-height: 1.19;
 }
+.soc-networks {
+    width: 206px;
+    height: 44px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 16px;
+}
+.soc-networks-coloms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.ourteam-css::after {
+.soc-networks-item {
+    /* display: flex; */
+    width: 44px;
+    height: 44px;
+}
+.soc-network-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* .ourteam-css::after {
     display: inline-block;
     content: "";
     width: 206px;
@@ -348,7 +372,7 @@ header .link {
     background-repeat: no-repeat;
     background-image: url(../images/ico/instagram.svg), url(../images/ico/twitter.svg), url(../images/ico/facebook.svg), url(../images/ico/linkedin.svg);
     background-position: 12px, 66px, 120px, 176px;
-}
+} */
 
 
 /* client */
@@ -396,6 +420,21 @@ address .link {
 }
 .contactus-item {
     margin-bottom: 9px;
+}
+.soc-network-coloms {
+    display: flex;
+    width: 206px;
+    height: 80px;
+    margin-bottom: 100px;
+    margin-left: 516px;
+}
+.soc-network-icon {
+    width: 20px;
+    height: 20px;
+}
+.soc-network {
+    color: var(--main-wight-color);
+    text-transform: uppercase;
 }
 
 
@@ -449,6 +488,6 @@ address .link {
 
 
 
-1. переробити партфоліо свг
+/* 1. переробити партфоліо свг
 2. телефон і мейл
-3. все в свг
+3. все в свг */
