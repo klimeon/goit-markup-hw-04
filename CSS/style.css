@@ -239,7 +239,22 @@ header .link {
 }
 .preference-coloms {
     display: flex;
-    /* justify-content: space-between; */
+}
+.block-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bcg-sec-color);
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+.preference-icon {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 70px;
+    height: 70px;
 }
 .preference-title {
     font-weight: 700;
@@ -383,6 +398,18 @@ header .link {
     align-items: center;
 
 }
+.clients-link {
+    display: flex;
+    height: 60px;
+}
+.clients-icon {
+    max-height: 60px;
+    max-width: 106px;
+}
+/* .svg {
+    width: 106px;
+    height: 60px;
+} */
 .clients-item {
     width: 170px;
     height: 92px;
@@ -491,3 +518,9 @@ address .link {
 /* 1. переробити партфоліо свг
 2. телефон і мейл
 3. все в свг */
+
+/* 
+-Змінити розмір іконок в клієнтах
+-Додати ховер +
+
+*/
