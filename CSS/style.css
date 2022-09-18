@@ -35,19 +35,10 @@ body {
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
 }
-/* .flex {
-    display: inline-flex;
-} */
-
-/* скинути крайні відступи */
-/* body .end {
-    margin-bottom: 0px;
-    margin-right: 0px;
+.flex {
+    display: flex;
 }
-body .begin {
-    margin-top: 0px;
-    margin-left: 0px;
-} */
+
 
 /* special main setting */
 /* прибрати крапки з li та відступи ul */
@@ -146,15 +137,19 @@ header .link {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.container.flex {
-    display: flex;
+.contact-icon {
+    fill: var(--text-color);
+    margin-right: 10px;
 }
+/* .container.flex {
+    align-items: center;
+} */
 .nav {
     display: flex;
     align-items: center ;
 }
 .nav-link {
-    display: flex;
+    /* display: flex; */
     margin-left: 93px;
 }
 .nav-item + .nav-item {
@@ -173,13 +168,17 @@ header .link {
     margin-left: 50px;
     /* можна замінити на li */
 }
-.contact-item {
+/* .contact-item {
     display: flex;
-}
+} */
 /* ефект наведення */
 .hover .link:hover,  .hover .link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
+/* .contact-icon:hover, .contact-icon:focus {
+    fill: var(--accent-color);
+} */
 .hover .link.current {
     color: var(--accent-color);
 }
@@ -199,10 +198,9 @@ header .link {
     margin-right: 10px;
     background-image: url(../images/ico/smartphone.svg);
 } */
-.tel:hover::before {
+/* .tel:hover::before {
     color: royalblue;
-    /* !!!!!! */
-}
+} */
 
 
 /* hero */
@@ -237,22 +235,20 @@ header .link {
 .preference {
     text-align: left;
 }
-.preference-coloms {
+/* .preference-coloms {
     display: flex;
-}
+} */
 .block-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--bcg-sec-color);
+
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
 }
 .preference-icon {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     width: 70px;
     height: 70px;
 }
@@ -365,15 +361,23 @@ header .link {
 .soc-networks-coloms {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .soc-networks-item {
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--main-icon-color);
     width: 44px;
     height: 44px;
 }
-.soc-network-icon {
+.soc-networks-item:hover, .soc-networks-item:focus {
+    fill: var(--main-wight-color);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+.soc-networks-icon {
     width: 20px;
     height: 20px;
 }
@@ -400,16 +404,14 @@ header .link {
 }
 .clients-link {
     display: flex;
-    height: 60px;
+    justify-content: center;
+    align-items: center;
+    fill: var(--main-icon-color);
 }
 .clients-icon {
     max-height: 60px;
     max-width: 106px;
 }
-/* .svg {
-    width: 106px;
-    height: 60px;
-} */
 .clients-item {
     width: 170px;
     height: 92px;
@@ -417,8 +419,11 @@ header .link {
     border: 1px solid var(--main-icon-color);
     border-radius: 4px;
 }
-.clients-item:hover {
+.clients-item:hover, .clients-item:focus {
     border: 1px solid var(--accent-color);
+}
+.clients-link:hover, .clients-link:focus {
+    fill: var(--accent-color);
 }
 
 
@@ -448,20 +453,45 @@ address .link {
 .contactus-item {
     margin-bottom: 9px;
 }
-.soc-network-coloms {
-    display: flex;
+.soc-network {
+    /* display: flex; */
     width: 206px;
     height: 80px;
-    margin-bottom: 100px;
-    margin-left: 516px;
+    margin-left: 69px;
+}
+/* .soc-network-icon {
+    width: 20px;
+    height: 20px;
+} */
+.soc-network {
+    color: var(--main-wight-color);
+    text-transform: uppercase;
+}
+.soc-network-coloms {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    height: 44px;
+    margin-top: 20px;
+}
+.soc-network-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--main-wight-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+.soc-network-item:hover, .soc-networks-item:focus {
+    fill: var(--main-wight-color);
+    background-color: var(--accent-color);
+    border-radius: 50%;
 }
 .soc-network-icon {
     width: 20px;
     height: 20px;
-}
-.soc-network {
-    color: var(--main-wight-color);
-    text-transform: uppercase;
 }
 
 
@@ -520,6 +550,7 @@ address .link {
 3. все в свг */
 
 /* 
+-змінити колір заливки для ховера меіл і телеф.
 -Змінити розмір іконок в клієнтах
 -Додати ховер +
 
