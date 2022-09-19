@@ -133,13 +133,16 @@ header .link {
     color: var(--title-color);
     text-decoration: none;
 
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 .contact-icon {
     fill: var(--text-color);
     margin-right: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 /* .container.flex {
     align-items: center;
@@ -172,13 +175,18 @@ header .link {
     display: flex;
 } */
 /* ефект наведення */
+/* .hover-link:hover,  .hover-link:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+} */
 .hover .link:hover,  .hover .link:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
 }
-/* .contact-icon:hover, .contact-icon:focus {
-    fill: var(--accent-color);
-} */
+.contact-icon:hover, .contact-icon:focus {
+    fill: var(--accent-color); 
+}
+
 .hover .link.current {
     color: var(--accent-color);
 }
@@ -542,16 +550,9 @@ address .link {
     font-size: 16px;
     line-height: 1.87;
 }
+.works-item:hover, .works-item:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
 
 
 
-/* 1. переробити партфоліо свг
-2. телефон і мейл
-3. все в свг */
-
-/* 
--змінити колір заливки для ховера меіл і телеф.
--Змінити розмір іконок в клієнтах
--Додати ховер +
-
-*/
