@@ -138,15 +138,6 @@ header .link {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.contact-icon {
-    fill: var(--text-color);
-    margin-right: 10px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-/* .container.flex {
-    align-items: center;
-} */
 .nav {
     display: flex;
     align-items: center ;
@@ -164,29 +155,23 @@ header .link {
     margin-left: auto;
     align-items: baseline;
 }
-.contact-link .link {
-    color: var(--text-color);
-}
 .contact-item + .contact-item {
     margin-left: 50px;
     /* можна замінити на li */
 }
-/* .contact-item {
-    display: flex;
-} */
-/* ефект наведення */
-/* .hover-link:hover,  .hover-link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+.contact-link .link {
+    color: var(--text-color);
+    fill: var(--text-color);
+    /* display: flex; */
+    gap: 10px;
+}
+/* .contact-icon {
+    margin-right: 10px;
 } */
 .hover .link:hover,  .hover .link:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
 }
-.contact-icon:hover, .contact-icon:focus {
-    fill: var(--accent-color); 
-}
-
 .hover .link.current {
     color: var(--accent-color);
 }
@@ -205,9 +190,6 @@ header .link {
     height: 16px;
     margin-right: 10px;
     background-image: url(../images/ico/smartphone.svg);
-} */
-/* .tel:hover::before {
-    color: royalblue;
 } */
 
 
@@ -243,9 +225,6 @@ header .link {
 .preference {
     text-align: left;
 }
-/* .preference-coloms {
-    display: flex;
-} */
 .block-icon {
     display: flex;
     justify-content: center;
@@ -369,10 +348,8 @@ header .link {
 .soc-networks-coloms {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
-
-.soc-networks-item {
+.soc-networks-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -380,7 +357,8 @@ header .link {
     width: 44px;
     height: 44px;
 }
-.soc-networks-item:hover, .soc-networks-item:focus {
+
+.soc-networks-link:hover, .soc-networks-link:focus {
     fill: var(--main-wight-color);
     background-color: var(--accent-color);
     border-radius: 50%;
@@ -408,25 +386,26 @@ header .link {
     justify-content: space-between;
     margin-top: 50pt;
     align-items: center;
-
+}
+.clients-item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--main-icon-color);
+    border-radius: 4px;
 }
 .clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
     fill: var(--main-icon-color);
+    width: 100%;
+    height: 100%;
 }
-.clients-icon {
+/* .clients-icon {
     max-height: 60px;
     max-width: 106px;
-}
-.clients-item {
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
-    border: 1px solid var(--main-icon-color);
-    border-radius: 4px;
-}
+} */
+
 .clients-item:hover, .clients-item:focus {
     border: 1px solid var(--accent-color);
 }
@@ -482,7 +461,7 @@ address .link {
     height: 44px;
     margin-top: 20px;
 }
-.soc-network-item {
+.soc-network-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -492,7 +471,7 @@ address .link {
     width: 44px;
     height: 44px;
 }
-.soc-network-item:hover, .soc-networks-item:focus {
+.soc-network-link:hover, .soc-network-link:focus {
     fill: var(--main-wight-color);
     background-color: var(--accent-color);
     border-radius: 50%;
