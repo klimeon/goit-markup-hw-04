@@ -207,6 +207,7 @@ header .link {
     margin-right: auto;
 }
 .hero.background {
+    
     background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
      url(../images/bacground.jpg);
      background-repeat: no-repeat;
@@ -224,7 +225,45 @@ header .link {
     margin-left: auto;
     margin-right: auto;
 }
+/* .backdrop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% 50%);
+    background-color: rgba(117, 117, 117, 0.5);
+    
+} */
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.backdrop {
+    opacity: 1;
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 521px;
+    background-color: var(--main-wight-color);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 
+}
+.close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    
+}
 
 /* preference */
 .preference {
@@ -516,6 +555,31 @@ address .link {
 }
 .works-item:not(:nth-child(-n+3)) {
     margin-top: 30px;
+}
+.overlay-block {
+    position: relative;
+}
+.overlay {
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+
+}
+.overlay-text {
+    display: block;
+    padding: 63px 24px;
+
+    color: var(--main-wight-color);
+    font-size: 18px;
+    line-height: 1.6;
+}
+.overlay:hover {
+    opacity: 1;
 }
 
 /* .portfolio-image {
